@@ -1,0 +1,41 @@
+{
+  "name": "mern-jobify",
+  "version": "1.0.0",
+  "description": "[Jobify](https://jobify.live/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup-project": "npm i && cd client && npm i",
+    "setup-production-app":"npm i && cd client && npm i && npm run build",
+    "server": "nodemon server",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently --kill-others-on-fail \" npm run server\" \" npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.11.0",
+    "concurrently": "^10.0.5",
+    "cookie-parser": "^1.4.7",
+    "datauri": "^4.1.0",
+    "dayjs": "^1.11.23",
+    "dotenv": "^18.0.2",
+    "express": "^4.22.3",
+    "express-async-errors": "^3.1.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.7.0",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "http-status-codes": "^2.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.6.0",
+    "mongoose": "^9.10.1",
+    "morgan": "^1.12.1",
+    "multer": "^2.4.0",
+    "nanoid": "^6.0.1",
+    "nodemon": "^3.1.14"
+  }
+}
