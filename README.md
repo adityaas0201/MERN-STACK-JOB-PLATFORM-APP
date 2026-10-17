@@ -1,6 +1,6 @@
 #### Complete App
 
-[Jobify](https://jobify.live/)
+[Jobify](mern-stack-job-platform-app.vercel.app)
 
 #### Create React APP
 
